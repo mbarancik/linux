@@ -1186,6 +1186,9 @@ void start_kernel(void)
 	arch_post_acpi_subsys_init();
 	kcsan_init();
 
+	/* xlogin */
+	printk(KERN_INFO "xbaranc");
+
 	/* Do the rest non-__init'ed, we're now alive */
 	rest_init();
 
